@@ -1,0 +1,7 @@
+This is a pwn heap challenge from the hackucf ctf.
+
+
+Author: kcolley
+nc ctf.hackucf.org 7003
+heap0
+libpwnableharness32.so
