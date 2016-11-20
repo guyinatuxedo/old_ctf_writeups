@@ -1,0 +1,10 @@
+Restricted Shell
+125
+format string
+Author: kcolley
+nc ctf.hackucf.org 7007
+restrictedshell
+libpwnableharness32.so
+
+
+This is a 125 point pwn problem from ctf.hackucf.org.
