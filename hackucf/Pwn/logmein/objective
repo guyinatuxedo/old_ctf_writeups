@@ -1,0 +1,10 @@
+Log Me In!
+15
+format string
+Author: kcolley
+nc ctf.hackucf.org 7006
+logmein
+libpwnableharness64.so
+
+
+This is a 15 point pwn challenge from ctf.hackucf.org
