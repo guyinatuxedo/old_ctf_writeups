@@ -136,6 +136,6 @@ flag{buffers_and_beef_make_for_a_yummie_pwn_steak}
 [*] Closed connection to ctf.hackucf.org port 9001
 ```
 
-And just like that, we pwn the elf
+And just like that, we pwn the elf.
 
 
