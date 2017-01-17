@@ -1,0 +1,4 @@
+data = bytearray(open('y', 'rb').read())
+for i in range(len(data)):
+	data[i] ^= int
+open('z', 'wb').write(data)
