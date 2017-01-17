@@ -37,12 +37,16 @@ Edit>Preferences>ESP
 
 ![alt tag](http://i.imgur.com/pEp1rst.png)
 
+Here are all of the entries decoded
 
+![alt tag](http://i.imgur.com/8U7PqiZ.png)
 
+Now after we input those, we will see a new protocol appears. We now have sever packets that use the http protocol. By following the tcp stream of the packets it reveals a download of a png. We can export the http object which reveals the image with the flag.
 
+![alt tag](http://i.imgur.com/66o5vYJ.png)
 
-
-
+Sources:
+https://ctftime.org/task/2566
 
 
 
