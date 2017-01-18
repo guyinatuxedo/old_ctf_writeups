@@ -33,12 +33,14 @@ Looking at this code, we can tell that it establishes a function then imports a 
 
 All “<<” and “>>” do is they just shift the binary value of an integer or bits a certain amount of bits to the left or right. For instance
 
-
-“1110101 >> 3 = 1110”
+```
+1110101 >> 3 = 1110
+```
 This operator shifts the bits 3 places to the left, effectively removing the last three bits. 
 
-
-“1110 << 3 = 1110000”
+```
+1110 << 3 = 1110000
+```
 This operator shifts the bits 3 places to the right, and added zeroes to the new places. So it effectively just added 3 zeroes to the end. Now notice that the end value is not the same. This is because we originally had some “1” values which were removed and replaced with “0”. So not every value can be reversed easily, but hopefully we shouldn’t have any issues.
 
 
