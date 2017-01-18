@@ -1,20 +1,18 @@
 This solution assumes you have gone back and went through Repetition 1. I’m not going to repeat everything. First let’s try to run the script from the first challenge and see what happens. Since this is a different challenge we will need to change the port. To do that change the port on the line that establishes the port (it’s the part that is in red).
 
-
-“conn = remote('ctf.hackucf.org', 10101)”
-
+```
+conn = remote('ctf.hackucf.org', 10101)
+```
 
 To
 
-
-“conn = remote('ctf.hackucf.org', 10102)”
-
+```
+conn = remote('ctf.hackucf.org', 10102)
+```
 
 Once the challenge gets to the end, it asks us for the first value added. So this just adds an additional aspect to the challenge, but it shouldn’t be too hard. Just edit the code to record the first value, then send it when it gets to the end. I posted the code which I made to solve this challenge, complete with comments. Keep in mind when the script finishes, it will crash but it will print out the flag before that. Keep in mind that like the first, when this script finishes it crashes but it prints out the flag.
 
-
-Exploit.py
-{
+```
 #These comments assume that you have been through Repetition 2
 #This imports the pwntools library
 from pwn import *
@@ -54,7 +52,7 @@ while True:
     else:
         print "sending: " + b
         conn.sendline(b)
-}
+```
 
 
 
