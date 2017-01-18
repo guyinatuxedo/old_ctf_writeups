@@ -1,31 +1,32 @@
 Credit to the HackUCF CTF Workshop 9/25/16 for showing me how to do this.
-Challenge
-#Hope #Change #Obama2008
+
+#Challenge
+
+Hope #Change #Obama2008
 nc misc.chal.csaw.io 8000
 
 This challenge is a misc challenge from CSAW 2016 Quals worth 25 points.
-Solution
+
+#Solution
+
 The first line isn’t very helpful, probably just a joke. The line below that indicates that we need to connect to a server. If you’re in linux you can just type in that command (provided you have netcat installed). When you do that you should see something similar to the pic on page 3.
 
 Now looking on that pic, it seems as they want to give us a money amount, and sort it into an array of values based upon fitting as many top level entries in the array as possible. After we successfully sort out one level, it will bring us to the next. With challenges like these, the ctf will want you to script out the process. It will try to stop you by requiring the task to be done like 500 times, all correct, and done within like 5 seconds each. Trust me, I’ve tried to do challenges like this by hand, it’s much better to script it out.
 
 Now for this challenge i’ve used python with a library known as pwntools. To install it use the following command.
 
-“sudo pip install pwntools”
+```
+sudo pip install pwntools
+```
 
 After that you will need to code it. You can use google, or just look at the commented code script I made below.  Keep in mind that when it gets the flag, the server will output a variable since it can’t convert a string to a float that has words in it. Also it will be missing the first letter since the script removes the first character since there is a dollar sign there. Also keep in mind that some of the comments down below are formatted to be in two lines, however they should be one.
 
-Flag
+Flag:
 Flag{started-from-the-bottom-now-my-whole-team-fucking-here}
 
 I’ve posted the final output of the script with the flag on the next page.
 
-
-
-
-
-
-Code
+```
 #import the library which we will use
 from pwn import *
 
@@ -70,7 +71,7 @@ while(1==1):
     #This prints out that it is done sorting the money, prints out the amount of times it has sorted money, and the output from the server
     print "done laundering mondey " + str(iteration)
     print conn.recvline()
-    
+```    
 
 
 
