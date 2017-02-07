@@ -1,0 +1,6 @@
+Name,GivenName,Surname,SamAccountName,UserPrincipalName,Path
+Alex Davis,Alex,Davis,adavis,adavis@cc.hal.corp,"OU=AutoAdd,DC=CC,DC=HAL,DC=CORP"
+Michael Rossi, Michael,Rossi,mrossi,mrossi@cc.hal.corp,"OU=AutoAdd,DC=CC,DC=HAL,DC=CORP"
+Matt Degraf,Matt,Degraf,mdegraf,mdegraf@cc.hal.corp,"OU=AutoAdd,DC=CC,DC=HAL,DC=CORP"
+Neil Stanger,Neil,Stanger,nstanger,nstanger@cc.hal.corp,"OU=AutoAdd,DC=CC,DC=HAL,DC=CORP"
+Kevin Colley,Kevin,Colley,kcolley,kcolley@cc.hal.corp,"OU=AutoAdd,DC=CC,DC=HAL,DC=CORP"
